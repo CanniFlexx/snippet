@@ -78,7 +78,7 @@
 import { Webhook } from "svix";
 import { headers } from "next/headers";
 import { WebhookEvent } from "@clerk/nextjs/server";
-import connect from "@/app/lib/connect";
+import {connect} from "@/app/lib/connect";
 import User from "@/app/Models/UserSchema";
 
 export async function POST(req: Request) {

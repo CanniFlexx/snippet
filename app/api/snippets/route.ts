@@ -1,4 +1,4 @@
-import connect from "@/app/lib/connect";
+import {connect} from "@/app/lib/connect";
 
 import SnippetM from "@/app/Models/SnippetSchema";
 import { NextResponse } from "next/server";

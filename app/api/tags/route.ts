@@ -1,4 +1,4 @@
-import connect from "@/app/lib/connect";
+import {connect} from "@/app/lib/connect";
 
 import Tag from "@/app/Models/TagSchema";
 import { NextResponse } from "next/server";

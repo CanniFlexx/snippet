@@ -9,7 +9,6 @@ import SideBarMenuIcon from "./TopBar/SideBarMenuIcon";
 import SwiperSelection from "./NotesArea/SwiperSelection";
 import AllNotesSection from "./NotesArea/AllNotesSection";
 import ContentNote from "../ContentNote/ContentNote";
-import TagsWindow from "../TagsWindow/TagsWindow";
 
 function ContentArea() {
   const {

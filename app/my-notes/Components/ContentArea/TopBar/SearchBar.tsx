@@ -9,6 +9,7 @@ function SearchBar() {
     darkModeObject: { darkMode },
     sideBarMenuObject: { sideBarMenu, setSideBarMenu },
     searchQueryObject: { searchQuery, setSearchQuery },
+    isMobileObject: { isMobile },
   } = useGlobalContext();
 
   return (
@@ -16,12 +17,21 @@ function SearchBar() {
       className={` ${darkMode[1].isSelected ? "bg-slate-700" : "bg-slate-100"}  relative pl-3 w-[60%] h-[38px]   rounded-3xl flex items-center gap-2`}
     >
       <SearchIcon className="text-purple-500" sx={{ fontsize: 13 }} />
-      <input
+      {/* <input
         placeholder="Search a snippet..."
         onChange={(e) => setSearchQuery(e.target.value)}
         value={searchQuery}
         className={` ${darkMode[1].isSelected ? "bg-slate-700" : "bg-slate-100"} w-[70%] outline-none text-sm  text-slate-500 text-[12px]`}
+      /> */}
+      <input
+        placeholder={isMobile ? "Search.." : "Search a snippet..."}
+        onChange={(e) => setSearchQuery(e.target.value)}
+        value={searchQuery}
+        className={`${
+          darkMode[1].isSelected ? "bg-slate-700" : "bg-slate-100"
+        } w-[70%] outline-none text-sm text-slate-500 text-[12px]`}
       />
+
       <AddSnippetButton />
     </div>
   );

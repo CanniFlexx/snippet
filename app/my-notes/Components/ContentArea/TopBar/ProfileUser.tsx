@@ -33,20 +33,20 @@ function ProfileUser() {
         className={`max-md:hidden  flex flex-col text-sm ${!user ? "gap-1" : ""}`}
       >
         {!user ? (
+          loadingUserEmail
+        ) : (
+          <span className="text-slate-600 text-[14px]  ">
+            Welcome,
+          </span>
+        )}
+        {!user ? (
           loadingUserName
         ) : (
-          <span className="font-semibold  ">
-            {user?.lastName} {user?.firstName}
+          <span className="font-semibold  text-slate-500">
+            {user?.firstName} {user?.lastName}
           </span>
         )}
 
-        {!user ? (
-          loadingUserEmail
-        ) : (
-          <span className="text-slate-500 text-[11px]  ">
-            {user?.emailAddresses[0].emailAddress}
-          </span>
-        )}
       </div>
     </div>
   );

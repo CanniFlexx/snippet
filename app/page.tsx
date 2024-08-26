@@ -1,5 +1,6 @@
 "use client";
 
+import { FaArrowRight } from 'react-icons/fa';
 import DataObjectIcon from "@mui/icons-material/DataObject";
 import { mainColor } from "@/Colors";
 import Link from "next/link";
@@ -10,15 +11,7 @@ export default function Home() {
     <div className="poppins">
       <Navbar />
       <CTASection />
-      <div className="w-full flex justify-center items-center mt-10">
-        <Image
-          src={"/app.jpg"}
-          alt="dashboard"
-          width={900}
-          height={400}
-          className="shadow-xl aspect-auto sm:w-auto w-[398px] rounded-lg max-w-full   sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl"
-        />
-      </div>
+      
     </div>
   );
 }
@@ -38,9 +31,9 @@ function Logo() {
       <div className={`bg-purple-600 p-[6px] rounded-md`}>
         <DataObjectIcon sx={{ fontSize: 27, color: "white" }} />
       </div>
-      <div className="flex gap-1 text-[19px] ">
-        <span className={`font-bold text-purple-600`}>Snippet</span>
-        <span className="text-slate-600">Master</span>
+      <div className="flex gap-1 text-[25px] ">
+        <span className={`font-bold text-purple-600`}>Snipp</span>
+        <span className="text-slate-600 font-bold">IT.</span>
       </div>
     </div>
   );
@@ -83,9 +76,9 @@ function Buttons() {
 function CTASection() {
   return (
     <div className="flex flex-col mx-16 items-center mt-[120px] gap-6 ">
-      <h2 className="font-bold text-2xl text-center">
-        Organize Your Code Snippets
-        <span className={`text-purple-600`}> Efficiently!</span>
+      <h2 className="font-bold text-2xl text-center text-slate-600">
+        Your <span style={{ color: mainColor }}>Snippets</span>, Organized and
+        Ready.
       </h2>
       <p className="text-center text-sm w-[450px] max-sm:w-full text-slate-500 ">
         With our advanced tagging and search features, you can quickly find the
@@ -94,11 +87,25 @@ function CTASection() {
       </p>
 
       <button
-        className={`block   px-9 py-3 text-sm font-medium text-white transition   focus:outline-none  `}
+        className={`block px-9 py-3 text-sm font-medium text-white transition   focus:outline-none  `}
         type="button"
       >
         {`Let's get started!`}
+        <LandingPage />
       </button>
+    </div>
+  );
+}
+
+function LandingPage() {
+  return (
+    <div className="flex items-center justify-center">
+      <Link href="/sign-up">
+        <button className="flex items-center gap-2 px-20 py-5 text-white text-xl bg-purple-600 rounded-md shadow-md hover:bg-purple-800 hover:shadow-lg transform transition-all duration-300 hover:translate-x-2">
+          Get Started
+          <FaArrowRight />
+        </button>
+      </Link>
     </div>
   );
 }

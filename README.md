@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SnippIT - The Snippet Application
 
-## Getting Started
+A modern **Snippet Management Tool** that allows developers to organize, store, and retrieve code snippets efficiently. With support for multiple programming languages, custom tagging, and advanced search functionality, this application enhances productivity by making code reuse simple and streamlined.
 
-First, run the development server:
+## 🌟 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Multi-Language Support**: Save and manage snippets in **9+ programming languages**, with plans to support **15+ languages**.
+- **Tagging System**: Organize snippets using custom tags for better categorization and retrieval.
+- **Search Functionality**: Quickly find snippets using advanced search features.
+- **Temporary Trash**: Recover accidentally deleted snippets from the trash.
+- **Favorites**: Mark frequently used snippets as favorites for quick access.
+- **Algorithm Tagging**: Automatically tag snippets based on algorithm types (coming soon).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Frontend**: [Next.js](https://nextjs.org/), [TypeScript](https://www.typescriptlang.org/), [Tailwind CSS](https://tailwindcss.com/), [ShadCN-UI](https://shadcn.dev/), [Material-UI](https://mui.com/)
+- **Backend**: [MongoDB](https://www.mongodb.com/), [ClerkAuth](https://clerk.dev/) for authentication
+- **UI Components**: Built with modern UI libraries for a seamless user experience
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 🚀 Deployment
 
-## Learn More
+The application is live! Check it out here:  
+🔗 **[Live Demo](https://snippet-test-eight.vercel.app)**
 
-To learn more about Next.js, take a look at the following resources:
+# 📦 Future Enhancements
+- Implement code autocomplete using AI.
+- Utilize OpenAI API to generate code directly as required instead of manually saving
+- Improve scalabiliy with horizontal scaling with increase in number of users.
+- Introduce user statistics dashboard to track snippet usage.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# 🖼️ Screenshots
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+# 📜 License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# 🧑‍💻 Author
+Developed by **Anish Samanta**.  
+GitHub: [CanniFlexx](https://github.com/CanniFlexx)
